@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Open Data - Ejemplo de Utilización</title>
+        <meta charset='UTF-8' />
+<script src="./js/openData.js"></script>
+<style>
+body {
+    background-color: burlywood;
+}
+
+h1, p {
+
+    font: bold;
+    color: rgb(2, 2, 51);
+    font-family: 'Lucida Sans';
+    
+}
+
+.cargando {
+    color:whitesmoke;
+    background-color: rgb(2, 2, 51);
+    padding: 20px;
+    width: 75%;
+    height: 100%;
+    
+}
+
+li {
+    font-family: 'Lucida Sans';
+    color:rgb(2, 2, 51);
+
+}
+
+.resultados {
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+    color:rgb(2, 2, 51);
+    background-color: antiquewhite;
+    padding:20px;
+    width: 75%;
+}
+
+
+</style>
+</head>
+<body>
+<h1>Usando Datos Abiertos del Ayuntamiento de Madrid</h1>
+<p>
+    Ejemplo para ver cómo utilizar el API de Open Data del Ayuntamiento de Madrid, disponible en <a href="https://datos.madrid.es/portal/site/egob/">https://datos.madrid.es/portal/site/egob/</a><br>
+</p>
+<h2>Listado de Aparcamientos de la Ciudad</h2>
+<div id='cargando'  class='cargando'><h3>---- Cargando ----</h3></div>
+<div id='listaParking' class='resultados'>
+</div>
+</body>
+</html>
