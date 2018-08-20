@@ -32,10 +32,6 @@ class Intervalo {
 		//Metodo solo accesible por la clase, ej. Math.loquesea
 		return 'Método accesible solo desde la propia clase';
 	}
-
-	nadaEspecial() {
-		alert('metodo nadaEspecial funcionando!....');
-	}
 		
 	union(intervalo) {
 		//función para sumar intervalos (union)
@@ -103,6 +99,34 @@ class ListaIntervalos {
 		}
 }
 
+
+
+var int1 = new Intervalo(0,1,10,0);
+
+var int2 = new Intervalo(0,2,9,0);
+
+console.log(int1.union(int2));
+
+var li = new ListaIntervalos();
+
+
+li.add(int1.valor);
+li.add(int2.valor);
+li.add(int1.valor);
+li.add(int2.valor);
+
+
+
+
+console.log(li.mostrar());
+console.log(li.contar());
+li.borrar();
+console.log(li.mostrar());
+console.log(li.contar());
+li.add(int1.union(int2));
+console.log(li.mostrar());
+console.log(li.contar());
+
 //Funcion que haga que dado un literal en forma de intervalo, construya el objeto intervalo.
 
 function parseIntervalo(cadena){
@@ -132,40 +156,12 @@ function parseIntervalo(cadena){
 	
 }
 
-
-/*
-var int1 = new Intervalo(0,1,10,0);
-
-var int2 = new Intervalo(0,2,9,0);
-
-console.log(int1.union(int2));
-
-var li = new ListaIntervalos();
-
-
-li.add(int1.valor);
-li.add(int2.valor);
-li.add(int1.valor);
-li.add(int2.valor);
+console.log(parseIntervalo('(110997,2878]').mostrar());
 
 
 
 
-console.log(li.mostrar());
-console.log(li.contar());
-li.borrar();
-console.log(li.mostrar());
-console.log(li.contar());
-li.add(int1.union(int2));
-console.log(li.mostrar());
-console.log(li.contar());
-*/
 
-
-var x = parseIntervalo('(1,4)');
-
-//console.log(x.longitud); --works fine!
-//x.nadaEspecial(); --works fine!
 
 
 

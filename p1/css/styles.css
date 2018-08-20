@@ -1,0 +1,144 @@
+* {
+	margin:0;
+	padding:0;
+	float:none;
+
+}
+
+.clearfix{
+	
+	clear:both;
+}
+
+body {
+	background-color:#ccc;
+}
+
+#global {
+	
+	margin-top:5%;
+	margin-bottom:1%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:3%;
+	background-color:white;
+	border: dotted 1px black;
+	width:60%;
+	overflow:auto;	
+	
+}
+
+.project-title {
+	width:400px;
+	height: 50px;
+	padding: 20px;
+	background-color:rgb(0,0,0,0.7);
+	font-size:30px;
+	font-family: Verdanda, Arial;
+	color: white;
+	margin-bottom:7px;
+}
+
+.menu-bar {
+	overflow:hidden;
+	cursor:pointer;
+	text-decoration:none;
+	list-style-type:none;
+	width:100%;
+	background-color: #ccc 	;
+	border: dotted 1px black;
+	padding: 0px;
+}    
+
+.menu-bar div {
+	padding:0px;
+}
+
+.menu-bar ul{
+	margin-left:0px;
+	padding:0px;
+	border: none;
+	
+}
+
+.menu-bar li {
+    margin-left:1px;
+	float: left;
+}
+
+.menu-bar li a {
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+	background-color:#ccc;
+	font-family: courier new;
+}
+
+.menu-bar li a:hover {
+    background-color: #CCF;
+	color:red;
+}
+
+
+
+.post {
+
+	margin-top: 5px;
+	margin-bottom:12px;
+	padding: 3%;
+	border: dashed 1px red;
+	font-family:courier new, arial;
+	color:#887766;
+
+}
+
+.post h2 {
+	color:green;
+	text-transform:uppercase;
+	
+}
+
+.lateral {
+	
+	top:0;
+	right:0;
+	background-color:#ccc;
+	border: dotted 3px blue;
+	width: 14%;
+	
+}
+
+.contenido-izquierda {
+		float:left;
+		width:55%;
+		border:solid 1px green;
+		overflow:auto;
+}
+
+.contenido-derecha {
+		float:right;
+		width:40%;
+		height:60%;
+		border:dotted 1px blue;
+		overflow:auto;
+
+
+}
+
+
+
+
+
+.footer {
+
+	background-color:rgb(0,0,0,0.7);
+	color: white;
+	font-family: courier new, Arial;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	border: dotted 1px black;
+}
+	

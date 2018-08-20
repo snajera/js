@@ -1,4 +1,5 @@
 'use strict'
+
 //Clases sobre Intervalos
 
 class Intervalo {
@@ -133,42 +134,23 @@ function parseIntervalo(cadena){
 }
 
 
-/*
-var int1 = new Intervalo(0,1,10,0);
 
-var int2 = new Intervalo(0,2,9,0);
+$(document).ready(function(){
 
-console.log(int1.union(int2));
+$("#form-intervalo").submit(function(event){
+    //alert('handler for submit');
+    event.preventDefault();
 
-var li = new ListaIntervalos();
+	// Introduzco el literal del intervalo en la caja y lo creo 
+	// al submit, la longitud del intervalo será la del DIV
+	var cadena = $("input[type=text]").val();
+	var int1 = parseIntervalo(cadena);
+	$("#long-intervalo").width((int1.longitud)*100);
+	$("#long-intervalo").css('margin-left',int1.extremoA*100 + 'px');
+})
 
+})
 
-li.add(int1.valor);
-li.add(int2.valor);
-li.add(int1.valor);
-li.add(int2.valor);
-
-
-
-
-console.log(li.mostrar());
-console.log(li.contar());
-li.borrar();
-console.log(li.mostrar());
-console.log(li.contar());
-li.add(int1.union(int2));
-console.log(li.mostrar());
-console.log(li.contar());
-*/
-
-
-var x = parseIntervalo('(1,4)');
-
-//console.log(x.longitud); --works fine!
-//x.nadaEspecial(); --works fine!
-
-
-
-
-
+//var x = parseIntervalo('(1,3)');
+//console.log(x.longitud);
 
